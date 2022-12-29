@@ -1,0 +1,342 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Node1.gd" type="Script" id=1]
+[ext_resource path="res://Level.gd" type="Script" id=2]
+[ext_resource path="res://Fonts/Roboto-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Fonts/Roboto-Medium.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="CanvasItemMaterial" id=11]
+
+[sub_resource type="QuadMesh" id=3]
+
+[sub_resource type="SphereMesh" id=1]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 47.0106
+
+[sub_resource type="DynamicFont" id=4]
+size = 25
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 60
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 25
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 60
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 30
+outline_size = 5
+outline_color = Color( 0.231373, 0, 1, 1 )
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 40
+outline_size = 6
+outline_color = Color( 1, 0, 0, 1 )
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 30
+font_data = ExtResource( 3 )
+
+[node name="Level" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="UserLine" type="Line2D" parent="."]
+
+[node name="Line2D" type="Line2D" parent="."]
+
+[node name="Line2D1" type="Line2D" parent="."]
+points = PoolVector2Array( 493, 766, 184, 525, 335, 295, 714, 277, 773, 32 )
+width = 2.0
+
+[node name="Line2D2" type="Line2D" parent="."]
+points = PoolVector2Array( 488, 764, 515, 448, 344, 291, 532, 140, 770, 36 )
+width = 2.0
+
+[node name="Line2D3" type="Line2D" parent="."]
+points = PoolVector2Array( 490, 758, 792, 525, 711, 283 )
+width = 2.0
+default_color = Color( 0.4, 0.501961, 1, 1 )
+
+[node name="Line2D4" type="Line2D" parent="."]
+points = PoolVector2Array( 795, 519, 515, 438 )
+width = 2.0
+default_color = Color( 0.4, 0.501961, 1, 1 )
+
+[node name="Start" type="MeshInstance2D" parent="."]
+material = SubResource( 11 )
+position = Vector2( 497, 764 )
+scale = Vector2( 109.125, 70.3751 )
+mesh = SubResource( 3 )
+
+[node name="Finish" type="MeshInstance2D" parent="."]
+position = Vector2( 775, 35 )
+scale = Vector2( 109.125, 70.3751 )
+mesh = SubResource( 3 )
+
+[node name="Node1" type="Area2D" parent="."]
+position = Vector2( 178, 521 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Node1"]
+position = Vector2( 1, 2 )
+scale = Vector2( 50.5516, 45 )
+mesh = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node1"]
+position = Vector2( -1, 2 )
+shape = SubResource( 2 )
+
+[node name="Label" type="Label" parent="Node1"]
+margin_left = -3.0
+margin_top = 56.0
+margin_right = 38.0
+margin_bottom = 79.0
+text = "56"
+autowrap = true
+clip_text = true
+uppercase = true
+
+[node name="Node2" type="Area2D" parent="."]
+position = Vector2( 533, 129 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Node2"]
+position = Vector2( 1, 2 )
+scale = Vector2( 50.5516, 45 )
+mesh = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2"]
+position = Vector2( -1, 2 )
+shape = SubResource( 2 )
+
+[node name="Label" type="Label" parent="Node2"]
+margin_left = -3.0
+margin_top = 56.0
+margin_right = 38.0
+margin_bottom = 79.0
+text = "56"
+autowrap = true
+clip_text = true
+uppercase = true
+
+[node name="Node3" type="Area2D" parent="."]
+position = Vector2( 712, 279 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Node3"]
+position = Vector2( 1, 2 )
+scale = Vector2( 50.5516, 45 )
+mesh = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node3"]
+position = Vector2( -1, 2 )
+shape = SubResource( 2 )
+
+[node name="Label" type="Label" parent="Node3"]
+margin_left = -3.0
+margin_top = 56.0
+margin_right = 38.0
+margin_bottom = 79.0
+text = "56"
+autowrap = true
+clip_text = true
+uppercase = true
+
+[node name="Node4" type="Area2D" parent="."]
+position = Vector2( 340, 292 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Node4"]
+position = Vector2( 1, 2 )
+scale = Vector2( 50.5516, 45 )
+mesh = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node4"]
+position = Vector2( -1, 2 )
+shape = SubResource( 2 )
+
+[node name="Label" type="Label" parent="Node4"]
+margin_left = -3.0
+margin_top = 56.0
+margin_right = 38.0
+margin_bottom = 79.0
+text = "56"
+autowrap = true
+clip_text = true
+uppercase = true
+
+[node name="Node5" type="Area2D" parent="."]
+position = Vector2( 796, 522 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Node5"]
+position = Vector2( 1, 2 )
+scale = Vector2( 50.5516, 45 )
+mesh = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node5"]
+position = Vector2( -1, 2 )
+shape = SubResource( 2 )
+
+[node name="Label" type="Label" parent="Node5"]
+margin_left = -3.0
+margin_top = 56.0
+margin_right = 38.0
+margin_bottom = 79.0
+text = "56"
+autowrap = true
+clip_text = true
+uppercase = true
+
+[node name="Node6" type="Area2D" parent="."]
+position = Vector2( 509, 442 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Node6"]
+position = Vector2( 1, 2 )
+scale = Vector2( 50.5516, 45 )
+mesh = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node6"]
+position = Vector2( -1, 2 )
+shape = SubResource( 2 )
+
+[node name="Label" type="Label" parent="Node6"]
+margin_left = -3.0
+margin_top = 56.0
+margin_right = 38.0
+margin_bottom = 79.0
+text = "56"
+autowrap = true
+clip_text = true
+uppercase = true
+
+[node name="RestartButton" type="Button" parent="."]
+margin_left = 7.0
+margin_top = 69.0
+margin_right = 118.0
+margin_bottom = 113.0
+rect_pivot_offset = Vector2( -447, 302 )
+text = "Reload"
+
+[node name="Button" type="Button" parent="."]
+margin_left = 8.0
+margin_top = 12.0
+margin_right = 119.0
+margin_bottom = 56.0
+text = "Solve"
+
+[node name="Label" type="Label" parent="."]
+margin_left = 21.0
+margin_top = 837.0
+margin_right = 994.0
+margin_bottom = 907.0
+text = "Select the nodes in the path to form the maximum till you reach the destination. You can select one node only once. There will be negetive numbers. :3"
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 67.0
+margin_top = 876.0
+margin_right = 226.0
+margin_bottom = 907.0
+custom_fonts/font = SubResource( 4 )
+text = "Moves Left: "
+
+[node name="MovesLeft" type="Label" parent="."]
+margin_left = 208.0
+margin_top = 858.0
+margin_right = 254.0
+margin_bottom = 929.0
+custom_fonts/font = SubResource( 5 )
+text = "5"
+
+[node name="FinishButton" type="Button" parent="."]
+margin_left = 704.0
+margin_top = -2.0
+margin_right = 852.0
+margin_bottom = 82.0
+text = "Finish"
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 356.0
+margin_top = 873.0
+margin_right = 421.0
+margin_bottom = 904.0
+custom_fonts/font = SubResource( 6 )
+text = "Sum:"
+
+[node name="TotalClickedSum" type="Label" parent="."]
+margin_left = 446.0
+margin_top = 855.0
+margin_right = 502.0
+margin_bottom = 927.0
+custom_fonts/font = SubResource( 7 )
+text = "5"
+
+[node name="Reset" type="Button" parent="."]
+margin_left = 10.0
+margin_top = 127.0
+margin_right = 119.0
+margin_bottom = 170.0
+text = "Reset"
+
+[node name="Result" type="Label" parent="."]
+margin_left = 725.0
+margin_top = 675.0
+margin_right = 890.0
+margin_bottom = 796.0
+custom_fonts/font = SubResource( 9 )
+text = "Playing..."
+
+[node name="MaxResult" type="Label" parent="."]
+margin_left = 575.0
+margin_top = 863.0
+margin_right = 721.0
+margin_bottom = 916.0
+custom_fonts/font = SubResource( 10 )
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 406.0
+margin_top = 796.0
+margin_right = 586.0
+margin_bottom = 832.0
+custom_fonts/font = SubResource( 12 )
+text = "Start Position"
+
+[connection signal="input_event" from="Node1" to="." method="_on_Node1_input_event"]
+[connection signal="input_event" from="Node2" to="." method="_on_Node2_input_event"]
+[connection signal="input_event" from="Node3" to="." method="_on_Node3_input_event"]
+[connection signal="input_event" from="Node4" to="." method="_on_Node4_input_event"]
+[connection signal="input_event" from="Node5" to="." method="_on_Node5_input_event"]
+[connection signal="input_event" from="Node6" to="." method="_on_Node6_input_event"]
+[connection signal="pressed" from="RestartButton" to="." method="_on_RestartButton_pressed"]
+[connection signal="pressed" from="RestartButton" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="FinishButton" to="." method="_on_FinishButton_pressed"]
+[connection signal="pressed" from="Reset" to="." method="_on_Reset_pressed"]
